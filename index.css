@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bb{
+    background-color: rgb(1, 7, 78);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+}
+
+#sidebar
+{
+   position: fixed;
+   width: 300px;
+   background-color: black;
+   color: white;
+   height: 100%;
+   left: -300px;
+   transition: 400ms;
+}
+
+#sidebar i
+{
+    padding-right: 10px;
+}
+#sidebar ul
+{
+    list-style: none;
+    padding-top: 90px;
+}
+
+ li{
+    padding: 30px;
+    font-size: 20px;
+}
+
+   
+#sidebar ul li:hover
+{
+    background-color: rgb(90, 90, 90);
+    transition: 400ms;
+    font-size: 23px;
+}
+#sidebar ul #pic:hover
+{
+    background-color: black;
+}
+
+#menu{
+    size: 40px;
+}
+
+#toggle 
+{
+    position: fixed;
+    left:2%;
+    top: 20px;
+    height: 40px;
+    width: 50px;
+    color: rgb(255, 0, 0);
+}
+
+#sidebar.active{
+    left: 0;
+    transition: ease-in-out;
+    transition: 400ms;
+}
+#toggle.active{
+    color: rgb(255, 255, 255);
+}
+
+#sidebar ul .pic:hover
+{
+    background-color: black;
+}
+
+#header
+{
+    font-size: 25px;
+    height: 60px;
+    padding-top:10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* @media(min-width:400px)
+{
+    #header
+    {
+        height:120px;
+        font-size: 75px;
+    }
+    
+    #toggle
+    {
+        height: 80px;
+        width: 200px;
+        font-size: 25px;
+    }
+    #sidebar ul li{
+        padding: 30px;
+        font-size: 35px;
+    }
+} */
+
+@media(max-width:401px)
+{
+    #header
+    {
+        font-size: 20px;
+        height: 45px;
+    }
+    
+    #toggle
+    {
+        font-size: 15px;
+    left:5%;
+    top: 10px;
+    width: 150px;
+    }
+    #sidebar ul li{
+        padding: 15px;
+        font-size: 20px;
+    }
+}
