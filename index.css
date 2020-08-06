@@ -103,7 +103,7 @@
     }
     #sidebar ul li{
         padding: 15px;
-        font-size: 12px;
+        font-size: 15px;
     }
     #sidebar
     {
@@ -132,15 +132,15 @@
     }
     #sidebar ul li{
         padding: 15px;
-        font-size: 15px;
+        font-size: 20px;
         
     }
     #sidebar
     {
-        width: 150px;
+        width: 200px;
     }
     #sidebar ul
     {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 }
