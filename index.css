@@ -28,6 +28,7 @@
 {
     list-style: none;
     padding-top: 90px;
+    
 }
 
  li{
@@ -105,7 +106,7 @@
     }
 } */
 
-@media(max-width:401px)
+@media(max-width:701px)
 {
     #header
     {
