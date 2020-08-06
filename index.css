@@ -27,8 +27,8 @@
 #sidebar ul
 {
     list-style: none;
-    padding-top: 70px;
-    
+    padding-top: 50px;
+       
 }
 
  li{
@@ -86,27 +86,36 @@
     background-color: rgb(255, 255, 255);
 }
 
-/* @media(min-width:400px)
+@media(max-width:850px)
 {
     #header
     {
-        height:120px;
-        font-size: 75px;
+        font-size: 20px;
+        height: 45px;
     }
     
     #toggle
     {
-        height: 80px;
-        width: 200px;
-        font-size: 25px;
+        font-size: 15px;
+        left:5%;
+        top: 10px;
+        width: 150px;
     }
     #sidebar ul li{
-        padding: 30px;
-        font-size: 35px;
+        padding: 15px;
+        font-size: 12px;
     }
-} */
+    #sidebar
+    {
+        width: 150px;
+    }
 
-@media(max-width:701px)
+    #sidebar ul
+    {
+        padding-top: 40px;
+    }
+}
+@media(max-width:501px)
 {
     #header
     {
@@ -124,9 +133,14 @@
     #sidebar ul li{
         padding: 15px;
         font-size: 15px;
+        
     }
     #sidebar
     {
         width: 150px;
+    }
+    #sidebar ul
+    {
+        padding-top: 50px;
     }
 }
