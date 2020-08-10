@@ -109,16 +109,13 @@
 .tab
 {
     text-align: center;
-    width: 33.33% ;
+    width: 34% ;
     padding: 20px;
     background-color: rgb(0, 0, 0);
     color: white;
     cursor: pointer;
 }
-.tts1:hover{
-    color: rgb(121, 121, 121);
-    transition: 500ms;
-}
+
 
 .inp{
     width: 30%;
