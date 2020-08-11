@@ -41,35 +41,57 @@ var x2=document.getElementById("ca")
 var x3=document.getElementById("cr")
 var x4=document.getElementById("cd")
 
-var x,y,z,a,b,c;
+var x,y,z,a,b,c,xx,yy;
 
 async function fetchWW()
 {
     res=await fetch('https://api.covid19api.com/summary');
     src=await res.json();
   
-    console.log(src.Global);
+    console.log(src.Countries);
     x=src.Global.NewConfirmed;
     y=src.Global.NewRecovered;
-    z=x-y;
-
+    xx=src.Global.TotalDeaths
+    yy=src.Global.NewDeaths;
     a=src.Global.TotalConfirmed;
     b=src.Global.TotalRecovered;
-     c=a-b;
+    c=a-b-xx;
+    z=x-y-yy;
     x1.innerHTML=a+x;
     x2.innerHTML=c+z;
     x3.innerHTML=b+y;
-    x4.innerHTML=src.Global.TotalDeaths;
+    x4.innerHTML='+'+xx;
 
-    y1.innerHTML=x;
+    y1.innerHTML='+'+x;
     y2.innerHTML=z;
-    y3.innerHTML=y;
-    y4.innerHTML=src.Global.NewDeaths;
+    y3.innerHTML='+'+y;
+    y4.innerHTML='+'+yy;
 
 }
 
 fetchWW();
 
+var countries=[];
+async function fetchWc()
+{
+    res=await fetch('https://api.covid19api.com/summary');
+    src=await res.json();
+
+    countries =  src.Countries;
+        updatetable(countries);
+  
+}
+
+updatetable=(countries)=>{
 
 
+        for(country of countries)
+        {
+            var newrow="<tr><td>"+country.Country +"</td><td>"+country.TotalConfirmed+"</td><td>"+country.TotalRecovered+"</td><td>"+country.TotalDeaths+"</td></tr>"
 
+            $("#tablebody").append(newrow)
+        }
+
+        $("#covtab").DataTable();
+    }
+fetchWc();
