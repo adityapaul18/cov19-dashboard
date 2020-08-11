@@ -51,7 +51,7 @@
                     
                     <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
                     <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
-                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 255, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
                     <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
                 </tr>
 
@@ -62,7 +62,7 @@
                     
                     <th id="dcc" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
                     <th id="dca" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
-                    <th id="dcr" style="padding-right: 10px;font-size: 10px; color: rgb(0, 255, 0);" class="text-center ">Recovered</th>
+                    <th id="dcr" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
                     <th id="dcd" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
                 </tr>
 
@@ -70,7 +70,7 @@
                     
                     <th id="cc" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
                     <th id="ca" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
-                    <th id="cr" style="padding-right: 11px;font-size: 18px; color: rgb(0, 255, 0);" class="text-center ">Recovered</th>
+                    <th id="cr" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
                     <th id="cd" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
                 </tr>
 
@@ -80,17 +80,91 @@
 
         </table>
 
-        <br> 
-        <div class="text-center" style="">
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
            <b>
                Country-wise Analysis
             </b>
         </div>
         
-        <br>
+        <br><br>
         <section>
 
-            <table id="covtab" style="position: relative;  width: 100%; font-size: 10px ;" > 
+            <table id="covtab" class="table" style="position: relative;  width: 100%; font-size: 10px ;" > 
+    
+                <thead>
+
+                    <tr>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(102, 102, 102);" class="text-center ">Country</th>
+                       
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(0, 255, 0);" class="text-dark ">Recovered</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(85, 85, 85);" class="text-dark ">Deaths</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tablebody" style="width: 100%; color: rgb(0, 0, 0);" class="text-center " >
+    
+                </tbody>
+    
+            </table>
+        </section>
+    </section>
+      
+  </div> 
+
+  <div id="b2" class="tabcont">
+    <section>
+
+        <table style="padding-right: 10px; width: 100%;"> 
+
+            <thead>
+
+                <tr>
+                    
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    
+                    <th id="dcc" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="dca" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="dcr" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="dcd" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+                <tr>
+                    
+                    <th id="cc" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="ca" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="cr" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="cd" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            
+
+        </table>
+
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
+           <b>
+               Country-wise Analysis
+            </b>
+        </div>
+        
+        <br><br>
+        <section>
+
+            <table id="covtab" class="table" style="position: relative;  width: 100%; font-size: 10px ;" > 
     
                 <thead>
 
@@ -114,31 +188,78 @@
       
   </div>
 
-  <div id="b2" class="tabcont">
-      
-      <input type="text" class="inp" placeholder="Enter username"> 
-      <i id="sub" class="fa fa-search" aria-hidden="true" onclick=""></i>
-      <br>
-      <br>
-      <br>
-
-      HOME2
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatum sequi quaerat tempora nostrum itaque officia aliquid placeat cumque magni sunt molestiae culpa est animi veniam exercitationem consectetur omnis autem harum ab aperiam aut? Iusto quam, magni cum ratione et cumque, neque laudantium dolorem aspernatur temporibus ipsa! Ullam distinctio nesciunt praesentium provident quidem quasi minus rerum. Natus ab maxime perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis deserunt voluptatem repellat sequi repellendus voluptatum quas dolore obcaecati enim dolor neque voluptatibus quibusdam id vero, dolorum doloribus esse natus aperiam? Explicabo veniam et ab perspiciatis consectetur, numquam quis repudiandae laboriosam facilis, cum pariatur fuga accusamus neque impedit. Ducimus ex laborum aspernatur consectetur consequuntur ipsum reiciendis placeat cupiditate voluptatibus ad, iste ipsam voluptatum labore necessitatibus a ea molestiae quae quasi. Iusto delectus et quis nobis! Dolore numquam nisi totam ab beatae non harum iste reprehenderit unde, molestias magni debitis praesentium recusandae eaque pariatur! Corrupti velit consectetur doloribus illo, cum dolores.
-  </div>
-
   <div id="b3" class="tabcont">
-      
-      <input type="text" class="inp" placeholder="Enter username"> 
-      <i id="sub" class="fa fa-search" aria-hidden="true" onclick=""></i>
+    <section>
 
+        <table style="padding-right: 10px; width: 100%;"> 
+
+            <thead>
+
+                <tr>
+                    
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    
+                    <th id="dccf" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="dcaf" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="dcrf" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="dcdf" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+                <tr>
+                    
+                    <th id="ccf" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="caf" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="crf" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="cdf" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            
+
+        </table>
+
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
+           <b>
+               Country-wise Analysis
+            </b>
+        </div>
+        
+        <br><br>
+        <section>
+
+            <table id="covtab" class="table" style="position: relative;  width: 100%; font-size: 10px ;" > 
+    
+                <thead>
+
+                    <tr>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(102, 102, 102);" class="text-center ">Country</th>
+                       
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(0, 255, 0);" class="text-dark ">Recovered</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(85, 85, 85);" class="text-dark ">Deaths</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tablebody" style="width: 100%; color: rgb(0, 0, 0);" class="text-center " >
+    
+                </tbody>
+    
+            </table>
+        </section>
+    </section>
      
-      <br>
-      <br>
-      <br>
-      HOME3
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatum sequi quaerat tempora nostrum itaque officia aliquid placeat cumque magni sunt molestiae culpa est animi veniam exercitationem consectetur omnis autem harum ab aperiam aut? Iusto quam, magni cum ratione et cumque, neque laudantium dolorem aspernatur temporibus ipsa! Ullam distinctio nesciunt praesentium provident quidem quasi minus rerum. Natus ab maxime perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis deserunt voluptatem repellat sequi repellendus voluptatum quas dolore obcaecati enim dolor neque voluptatibus quibusdam id vero, dolorum doloribus esse natus aperiam? Explicabo veniam et ab perspiciatis consectetur, numquam quis repudiandae laboriosam facilis, cum pariatur fuga accusamus neque impedit. Ducimus ex laborum aspernatur consectetur consequuntur ipsum reiciendis placeat cupiditate voluptatibus ad, iste ipsam voluptatum labore necessitatibus a ea molestiae quae quasi. Iusto delectus et quis nobis! Dolore numquam nisi totam ab beatae non harum iste reprehenderit unde, molestias magni debitis praesentium recusandae eaque pariatur! Corrupti velit consectetur doloribus illo, cum dolores.
   </div>
 
   
