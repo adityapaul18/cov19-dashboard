@@ -142,7 +142,7 @@
     height: 100%;
     width: 100%;
     /* background-color: oldlace; */
-    background-image: linear-gradient(to bottom , oldlace, rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom , rgb(252, 209, 129), rgb(255, 255, 255));
     background-repeat: no-repeat;
 }
 
@@ -152,7 +152,7 @@
     font-size: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    background-image: linear-gradient(to bottom ,rgb(46, 255, 64), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom ,rgb(147, 255, 104), rgb(255, 255, 255));
     background-repeat: no-repeat;
     
 }
@@ -163,7 +163,7 @@
     font-size: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    background-image: linear-gradient(to bottom , #4fc4fa, rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom , #6ed1ff, rgb(255, 255, 255));
     background-repeat: no-repeat;
     
 }
@@ -238,11 +238,11 @@
         padding-left: 7px;
         padding-right: 7px;
     }#b2{
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 7px;
+        padding-right: 7px;
     }#b3{
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     #tablebody{
