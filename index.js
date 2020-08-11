@@ -60,7 +60,7 @@ async function fetchWW()
     x1.innerHTML=a+x;
     x2.innerHTML=c+z;
     x3.innerHTML=b+y;
-    x4.innerHTML='+'+xx;
+    x4.innerHTML=xx;
 
     y1.innerHTML='+'+x;
     y2.innerHTML=z;
