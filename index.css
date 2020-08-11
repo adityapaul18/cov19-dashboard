@@ -188,6 +188,8 @@
     #sidebar
     {
         width: 150px;
+        z-index: +2;
+        
     }
 
     #sidebar ul
@@ -219,6 +221,7 @@
     #sidebar
     {
         width: 300px;
+        z-index: +2;
     }
     #sidebar ul
     {
@@ -239,5 +242,9 @@
     }#b3{
         padding-left: 35px;
         padding-right: 35px;
+    }
+
+    #tablebody{
+        font-size: 10px;
     }
 }
