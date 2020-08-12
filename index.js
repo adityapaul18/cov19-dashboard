@@ -189,7 +189,7 @@ datetable=(ss)=>{
     for(sss of ss)
     {
         if(d){
-            var newrow="<tr><td>"+sss.state +"</td><td>"+sss.confirmed + sss.deltaconfirmed+"</td><td>"+sss.recovered+sss.deltarecovered+"</td><td>"+sss.deaths+sss.deltadeaths+"</td></tr>"
+            var newrow="<tr><td>"+sss.state +"</td><td>"+sss.confirmed+"</td><td>"+sss.recovered+"</td><td>"+sss.deaths+"</td></tr>"
         }
 
         d++;
