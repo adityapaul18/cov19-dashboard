@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    
+</head>
+<link rel="stylesheet" href="tab.css">
+<body id="bb">
+    <div id="sidebar" onclick="togl()">
+        <span id="toggle" >
+            <i id="menu" class="fa fa-bars" aria-hidden="true"></i>
+
+        </span>
+        <ul>
+            <!-- <span><li class="pic"><img  src="https://www.thefamouspeople.com/profiles/images/robert-downey-jr--2.jpg" alt="" style=" border-radius: 100%;width: 250px;" ></li> -->
+            
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html"> HOME</a></li>
+            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about.html"> ABOUT</a></li>
+            <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/adityapaul18/cov19-board-mobile-view">  GITHUB</a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="https://adityapaul.herokuapp.com"> CONTACT</a></li>
+        </ul>
+    </div>
+
+   
+
+    <div id="header"><b>COVID19 STATS</b></div>
+
+    <br>
+    <br>
+
+    <div class="text-center" style="font-size: 25px; width: 100%; background-color: rgb(222, 222, 253); height: 50px;padding-top: 10px;" >ABOUT</div>
+
+    <br>
+    <br>
+    <img src="../IMG_20190907_1517561.jpg" alt="" style=" width: 300px; margin: auto;">
+    <br>
+    <div id="abt" class="text-center">
+        Hey everyone, mt name is Aditya Paul. While the pandemic was going on, every dashboard of covid 19 that I checked showed a lot of unrequired info in which I had to find out the stats of required state and districts. I was learning  Web-Dev at that time so I decided to create my own dashboard to test my application skills, it shows precise data of global, Indian and my district's confirmed , active ,recovered and deaths cases. It has minimal yet fine-tuned UI. I have open sourced it's code on github for others to add features or to see the components that I used .You can access that on the GITHUB link in the side-menu .
+
+    </div>
+    <div id="abt" class="text-center">
+            Stay safe, wear a mask
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+  
+    <script src="index.js">
+    </script>
+   
+</body>
+</html>
