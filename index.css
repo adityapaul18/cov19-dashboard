@@ -167,6 +167,17 @@
     background-repeat: no-repeat;
     
 }
+#abt
+    {
+        font-size:20px ;
+        margin: 20px;
+    }
+
+    #sidebar
+    {
+        width: 300px;
+        z-index: +2;
+    }
 @media(max-width:850px)
 {
     #header
@@ -200,6 +211,7 @@
 }
 @media(max-width:501px)
 {
+    
     #header
     {
         font-size: 23px;
