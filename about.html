@@ -23,9 +23,9 @@
         <ul>
             <!-- <span><li class="pic"><img  src="https://www.thefamouspeople.com/profiles/images/robert-downey-jr--2.jpg" alt="" style=" border-radius: 100%;width: 250px;" ></li> -->
             
-            <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html"> HOME</a></li>
-            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about.html"> ABOUT</a></li>
-            <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/adityapaul18/cov19-board-mobile-view">  GITHUB</a></li>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html"> HOME </a></li>
+            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="about.html"> ABOUT </a></li>
+            <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/adityapaul18/cov19-board-mobile-view">GITHUB</a>  </li>
             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="https://adityapaul.herokuapp.com"> CONTACT</a></li>
         </ul>
     </div>
@@ -34,28 +34,272 @@
 
     <div id="header"><b>COVID19 STATS</b></div>
 
+    <div id="topbar" style="width: 100%;">
+      <div id="t1" class="tab" onclick=" func('b1','t1',' rgb(223, 25, 25)') "><b class="tts1">World</b></div>
+      <div id="t2" class="tab" onclick=" func('b2','t2',' rgb(21, 179, 0)') "><b class="tts1">India</b></div>
+      <div id="t3" class="tab" onclick="func('b3','t3','rgb(53, 90, 255)') "><b class="tts1">Faridabad</b></div>
+  </div>
+
+  <div id="b1" class="tabcont">
+    <section>
+
+        <table style=" width: 100%;"> 
+
+            <thead>
+
+                <tr>
+                    
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    
+                    <th id="dcc" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="dca" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="dcr" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="dcd" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+                <tr>
+                    
+                    <th id="cc" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="ca" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="cr" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="cd" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            
+
+        </table>
+
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
+           <b>
+               Country-wise Analysis
+            </b>
+        </div>
+        
+        <br><br>
+        <section>
+
+            <table id="covtab" class="table" style="position: relative;  width: 100%; font-size: 10px ;" > 
+    
+                <thead>
+
+                    <tr>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(102, 102, 102);" class="text-center ">Country</th>
+                       
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(0, 255, 0);" class="text-dark ">Recovered</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(85, 85, 85);" class="text-dark ">Deaths</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tablebody" style="width: 100%; color: rgb(0, 0, 0);" class="text-center " >
+    
+                </tbody>
+    
+            </table>
+        </section>
+    </section>
+        <br><br>
+        <footer style="width:100% ;height: 100px;">
+            <div class="text-center" style="padding-block: 30px;"><b>Designed By Aditya Paul</b>
+                <div class="text-center"><b>
+                    IIIT Surat
+
+                </b>
+    
+                </div>
+            </div>
+    
+        </footer>
+      
+  </div> 
+
+  <div id="b2" class="tabcont">
+    <section>
+
+        <table style="padding-right: 10px; width: 100%;"> 
+
+            <thead>
+
+                <tr>
+                    
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center clck">Active </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    
+                    <th id="dcci" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="dcai" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="dcri" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="dcdi" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+                <tr>
+                    
+                    <th id="cci" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="cai" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="cri" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="cdi" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            
+
+        </table>
+
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
+           <b>
+               State-wise Analysis
+            </b>
+        </div>
+        
+        <br><br>
+        <section>
+
+            <table id="covtab1" class="table" style="position: relative;  width: 100%; font-size: 14px ;" > 
+    
+                <thead>
+
+                    <tr>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(102, 102, 102);" class="text-center ">States</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(255, 0, 0);" class="text-center clck">Confirmed </th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(0, 165, 0);" class="text-dark ">Recovered</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(85, 85, 85);" class="text-dark ">Deaths</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tablebody1" style="width: 100%; color: rgb(0, 0, 0);" class="text-center " >
+    
+                </tbody>
+    
+            </table>
+        </section>
+    </section>
+    <br>
+    <br>
+    <footer style="width:100% ;height: 100px;">
+        <div class="text-center" style="padding-block: 30px;"><b>Designed By Aditya Paul</b>
+            <div class="text-center"><b>
+                IIIT Surat
+
+            </b>
+
+            </div>
+        </div>
+
+    </footer>
+      
+  </div>
+
+  <div id="b3" class="tabcont">
+    <section>
+
+        <table style="padding-right: 10px; width: 100%;"> 
+
+            <thead>
+
+                <tr>
+                    
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th style="padding-right: 11px;font-size: 14px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    
+                    <th id="dccf" style="padding-right: 10px;font-size: 10px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="dcaf" style="padding-right: 10px;font-size: 10px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="dcrf" style="padding-right: 10px;font-size: 10px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="dcdf" style="padding-right: 10px;font-size: 10px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+                <tr>
+                    
+                    <th id="ccf" style="padding-right: 11px;font-size: 18px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                    <th id="caf" style="padding-right: 11px;font-size: 18px; color: rgb(4, 0, 255);" class="text-center ">Active </th>
+                    <th id="crf" style="padding-right: 11px;font-size: 18px; color: rgb(0, 165, 0);" class="text-center ">Recovered</th>
+                    <th id="cdf" style="padding-right: 11px;font-size: 18px; color: rgb(85, 85, 85);" class="text-center ">Deaths</th>
+                </tr>
+
+            </thead>
+
+            
+
+        </table>
+
+        <br> <br>
+        <div class="text-center" style=" font-size: smaller;">
+           <b>
+               Other Districts' Analysis 
+            </b>
+        </div>
+        
+        <br><br>
+        <section>
+
+            <table id="covtab3" class="table" style="position: relative;  width: 100%; font-size: 14px ;" > 
+    
+                <thead>
+
+                    <tr>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(102, 102, 102);" class="text-center ">Districts</th>
+                       
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(255, 0, 0);" class="text-center ">Confirmed </th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(0, 165, 0);" class="text-dark ">Recovered</th>
+                        <th style="width: 25%; padding-right: 10px;font-size: 13px; color: rgb(85, 85, 85);" class="text-dark ">Deaths</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody id="tablebody3" style="width: 100%; color: rgb(0, 0, 0);" class="text-center " >
+    
+                </tbody>
+    
+            </table>
+        </section>
+    </section>
     <br>
     <br>
 
-    <div class="text-center" style="font-size: 25px; width: 100%; background-color: rgb(222, 222, 253); height: 50px;padding-top: 10px;" >ABOUT</div>
+    <footer style="width:100% ;height: 100px;">
+        <div class="text-center" style="padding-block: 30px;"><b>Designed By Aditya Paul</b>
+            <div class="text-center"><b>
+                IIIT Surat
 
-    <br>
-    <br>
-    <img src="../IMG_20190907_1517561.jpg" alt="" style=" width: 300px; margin: auto;">
-    <br>
-    <div id="abt" class="text-center">
-        Hey everyone, my name is Aditya Paul. While the pandemic was going on, every dashboard of covid 19 that I checked showed a lot of unrequired info in which I had to find out the stats of required state and districts. I was learning  Web-Dev at that time so I decided to create my own dashboard to test my application skills. This dashboard shows precise data of global, Indian and my district's confirmed , active ,recovered and deaths cases. It has minimal yet fine-tuned UI. I have open sourced it's code on github for others to add features or to see the components that I used .You can access that on the GITHUB link in the side-menu .
+            </b>
 
-    </div>
-    <div id="abt" class="text-center">
-            Stay safe, wear a mask
-    </div>
+            </div>
+        </div>
 
-    <br>
-    <br>
-    <br>
+    </footer>
+     
+  </div>
 
-  
     <script src="index.js">
     </script>
    
