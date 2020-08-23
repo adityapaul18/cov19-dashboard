@@ -95,7 +95,7 @@ updatetable=(countries)=>{
     }
 fetchWc();
 
-var faridabad=[];
+var faridabad=[],dists=[];
 
 async function fetchIW()
 {
@@ -103,7 +103,8 @@ async function fetchIW()
     src=await res.json();
     faridabad=src.Haryana.districtData.Faridabad;
    
-
+    console.log(src.Haryana.districtData);
+    dists=src.Haryana.districtData;
     var y1=document.getElementById("dccf")
     var y2=document.getElementById("dcaf")
     var y3=document.getElementById("dcrf")
@@ -132,6 +133,92 @@ async function fetchIW()
     y2.innerHTML=z;
     y3.innerHTML='+'+y;
     y4.innerHTML='+'+yy;
+
+    
+             var uuu1=dists.Ambala;
+            var newrow1="<tr><td>"+"Ambala" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+             $("#tablebody3").append(newrow1)
+
+            var uuu1=dists.Gurugram;
+            var newrow1="<tr><td>"+"Gurugram" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+               $("#tablebody3").append(newrow1)
+
+               var uuu1=dists.Bhiwani;
+               var newrow1="<tr><td>"+"Bhiwani" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                $("#tablebody3").append(newrow1)
+
+                var uuu1=dists.Faridabad;
+                var newrow1="<tr><td>"+"Faridabad" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                 $("#tablebody3").append(newrow1)
+
+                 var uuu1=dists.Hisar;
+                 var newrow1="<tr><td>"+"Hisar" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                  $("#tablebody3").append(newrow1)
+
+                  var uuu1=dists.Jhajjar;
+                  var newrow1="<tr><td>"+"Jhajjar" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                   $("#tablebody3").append(newrow1)
+
+                   var uuu1=dists.Jind;
+                   var newrow1="<tr><td>"+"Jind" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                    $("#tablebody3").append(newrow1)
+
+                    var uuu1=dists.Kaithal;
+                    var newrow1="<tr><td>"+"Kaithal" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                     $("#tablebody3").append(newrow1)
+
+                     var uuu1=dists.Karnal;
+                     var newrow1="<tr><td>"+"Karnal" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                      $("#tablebody3").append(newrow1)
+
+                      var uuu1=dists.Kurukshetra;
+                      var newrow1="<tr><td>"+"Kurukshetra" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                       $("#tablebody3").append(newrow1)
+
+                       var uuu1=dists.Mahendragarh;
+                       var newrow1="<tr><td>"+"Mahendragarh" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                        $("#tablebody3").append(newrow1)
+
+
+                        var uuu1=dists.Nuh;
+                        var newrow1="<tr><td>"+"Nuh" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                         $("#tablebody3").append(newrow1)
+
+                         var uuu1=dists.Palwal;
+                         var newrow1="<tr><td>"+"Palwal" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                          $("#tablebody3").append(newrow1)
+
+                          var uuu1=dists.Panchkula;
+                          var newrow1="<tr><td>"+"Panchkula" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                           $("#tablebody3").append(newrow1)
+                        
+                           var uuu1=dists.Panipat;
+                           var newrow1="<tr><td>"+"Panipat" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                            $("#tablebody3").append(newrow1)
+
+                            var uuu1=dists.Rewari;
+                            var newrow1="<tr><td>"+"Rewari" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                             $("#tablebody3").append(newrow1)
+
+                             var uuu1=dists.Rohtak;
+                             var newrow1="<tr><td>"+"Rohtak" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                              $("#tablebody3").append(newrow1)
+
+                              var uuu1=dists.Sirsa;
+                              var newrow1="<tr><td>"+"Sirsa" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                               $("#tablebody3").append(newrow1)
+
+                               var uuu1=dists.Sonipat;
+                              var newrow1="<tr><td>"+"Sonipat" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                               $("#tablebody3").append(newrow1)
+
+                               var uuu1=dists.Yamunanagar;
+                              var newrow1="<tr><td>"+"Yamunanagar" +"</td><td>"+uuu1.confirmed+"</td><td>"+uuu1.recovered+"</td><td>"+uuu1.deceased+"</td></tr>";
+                               $("#tablebody3").append(newrow1)
+
+    
+
+    $("#covtab3").DataTable();
 
     
 }
