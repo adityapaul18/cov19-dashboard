@@ -124,9 +124,9 @@ async function fetchIW()
     b=faridabad.recovered;
     c=a-b-xx;
     z=x-y-yy;
-    x1.innerHTML=a+x;
-    x2.innerHTML=c+z;
-    x3.innerHTML=b+y;
+    x1.innerHTML=a;
+    x2.innerHTML=c;
+    x3.innerHTML=b;
     x4.innerHTML=xx;
 
     y1.innerHTML='+'+x;
