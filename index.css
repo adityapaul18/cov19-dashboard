@@ -6,7 +6,7 @@
 
 @media (min-width :900px){
     #cont{
-        /* padding-top: 20px; */
+        margin-top: 20px;
         padding-bottom: 20px;
         box-shadow: 2px 2px 20px 2px rgb(0, 0, 0);
     }
